@@ -37,8 +37,8 @@ def sac_config(
     num_actor_samples: int = 1,
     num_critic_updates: int = 1,
     # Settings for multiple critics
-    num_critic_networks: int = 1,
-    target_critic_backup_type: str = "mean",  # One of "doubleq", "min", or "mean"
+    num_critic_networks: int = 2,
+    target_critic_backup_type: str = "min",  # One of "doubleq", "min", or "mean"
     # Soft actor-critic
     backup_entropy: bool = True,
     use_entropy_bonus: bool = True,
